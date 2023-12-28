@@ -38,7 +38,7 @@
     "class" : "GunFire",
 
     "fireTime" : 0.5,
-    "baseDps" : 12.0,
+    "baseDps" : 6.0,
     "energyUsage" : 12,
     "inaccuracy" : 0.04,
 
@@ -89,7 +89,6 @@
     },
     "primaryAbility" : {
       "fireTime" : 0.4,
-      "baseDps" : 14.0,
       "energyUsage" : 14
     },
     "shortdescription" : "^#fc3b00;Wrist^reset; Watch ^yellow;^reset;"

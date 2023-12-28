@@ -21,7 +21,10 @@
   },
   "animationCustom" : {
     "particleEmitters" : {
-      "muzzleFlash" : {
+      "altMuzzleFlash" : {
+        "active" : false,
+        "transformationGroups" : ["muzzle"],
+        "offsetPart" : "muzzleFlash",
         "burstCount" : 3,
         "particles" : [
           { "particle" : "rocketbarrelpuff" }
@@ -29,7 +32,8 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/rocket1.ogg" ]
+      "altFire" : [ "/sfx/gun/grenade2.ogg" ],
+      "targetAcquired" : [ "/sfx/interface/rocket_lockon2.ogg" ]
     }
   },
   "baseOffset" : [0.0, 0.0],
@@ -38,21 +42,28 @@
   "scripts" : ["wristgun.lua"],
 
   "elementalType" : "physical",
+  "animationScripts" : [
+    "/items/active/weapons/ranged/abilities/homingrocket/homingrocketanimation.lua"
+  ],
 
-  "primaryAbilityType" : "homingrocket",
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
+    "name" : "Homing Rocket",
+    "scripts" : ["/ctitems/wristhomingrocket.lua"],
+    "class" : "HomingRocketAttack",
 
     "fireTime" : 1.0,
-    "baseDps" : 9,
-    "energyUsage" : 38,
+    "baseDps" : 7,
+    "energyUsage" : 28,
     "inaccuracy" : 0.0,
     "fireType" : "auto",
     "projectileCount" : 1,
 
-    "projectileType" : "rocketshell",
+    "queryRange" : 50,
+    "rocketWindupTime" : 0.25,
+
+    "projectileType" : "homingrocket",
     "projectileParameters" : {
+      "speed" : 30,
       "knockback" : 40
     },
 
@@ -96,7 +107,7 @@
     },
     "primaryAbility" : {
       "fireTime" : 0.9,
-      "energyUsage" : 40
+      "energyUsage" : 30
     },
     "shortdescription" : "^#fc3b00;Wrist^reset; Homing Blaster ^yellow;^reset;"
   }

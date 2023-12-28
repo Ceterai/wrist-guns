@@ -45,8 +45,8 @@
     "class" : "GunFire",
 
     "fireTime" : 1.5,
-    "baseDps" : 10.5,
-    "energyUsage" : 26,
+    "baseDps" : 8.5,
+    "energyUsage" : 24,
     "projectileCount" : 1,
     "fireType" : "auto",
     "inaccuracy" : 0.0,
@@ -96,7 +96,7 @@
     },
     "primaryAbility" : {
       "fireTime" : 1.2,
-      "energyUsage" : 28
+      "energyUsage" : 26
     },
     "shortdescription" : "^#fc3b00;Wrist^reset; Mortar ^yellow;^reset;"
   }

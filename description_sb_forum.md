@@ -9,4 +9,6 @@ This mod contains 12 upgradeable one-hand guns, that you wear on your wrist.
 [*]upgrading at Weapon Upgrade Anvil will not only increase base weapon stats, but also might increase speed, projectile count, etc.
 [/LIST]
 
-Enjoy! 💙
+Find this mod on: [URL='https://steamcommunity.com/sharedfiles/filedetails/?id=2014363721']Steam[/URL] | [URL='https://github.com/Ceterai/wrist-guns']GitHub[/URL]
+
+Enjoy! <3

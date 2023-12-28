@@ -38,8 +38,8 @@
     "class" : "GunFire",
 
     "fireTime" : 2.0,
-    "baseDps" : 20.0,
-    "energyUsage" : 38,
+    "baseDps" : 8,
+    "energyUsage" : 24,
     "inaccuracy" : 0.008,
     "fireType" : "auto",
 
@@ -90,7 +90,7 @@
     },
     "primaryAbility" : {
       "fireTime" : 1.5,
-      "energyUsage" : 44
+      "energyUsage" : 26
     },
     "shortdescription" : "^#fc3b00;Wrist^reset; Rifle ^yellow;^reset;"
   }

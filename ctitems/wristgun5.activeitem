@@ -37,13 +37,12 @@
     "class" : "GunFire",
 
     "fireTime" : 1.0,
-    "baseDps" : 15,
-    "energyUsage" : 27,
-    "projectileCount" : 6,
+    "baseDps" : 7,
+    "energyUsage" : 19,
+    "projectileCount" : 1,
     "fireType" : "auto",
     "inaccuracy" : 0.13,
 
-    "projectileType" : "standardbullet",
     "projectileParameters" : {
       "damageKind" : "shotgunbullet",
       "knockbackRange" : 15
@@ -89,8 +88,8 @@
     },
     "primaryAbility" : {
       "fireTime" : 0.9,
-      "projectileCount" : 7,
-      "energyUsage" : 30
+      "projectileCount" : 2,
+      "energyUsage" : 21
     },
     "shortdescription" : "^#fc3b00;Wrist^reset; Howitzer ^yellow;^reset;"
   }

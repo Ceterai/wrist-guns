@@ -1,5 +1,15 @@
 # Changelog
 
+## Update 1.1 - Nerf Guns
+
+### 1.1.0
+
+These guns were too powerful, so I finally nerfed them down.
+
+- rebalanced all weapons damage/emergy-wise;
+- fixed homing, shrapnel & explosive shots;
+- minor bug fixes.
+
 ## Update 1.0 - Wrist Guns
 
 ### 1.0.0
