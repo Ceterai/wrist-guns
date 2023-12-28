@@ -1,0 +1,103 @@
+﻿{
+  "itemName" : "wristhomingblaster",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "Blast rockets from your wrists!",
+  "shortdescription" : "^#fc3b00;Wrist^reset; Homing Blaster",
+  "tooltipKind" : "gun",
+  "category" : "rocketLauncher",
+  "twoHanded" : false,
+  "level" : 4,
+  "itemTags" : ["weapon","ranged","rocketlauncher","upgradeableWeapon"],
+
+  "inventoryIcon" : "wristgun10.png",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "wristgun10.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 3,
+        "particles" : [
+          { "particle" : "rocketbarrelpuff" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/rocket1.ogg" ]
+    }
+  },
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [0.75, 0.0],
+
+  "scripts" : ["wristgun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "homingrocket",
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.0,
+    "baseDps" : 9,
+    "energyUsage" : 38,
+    "inaccuracy" : 0.0,
+    "fireType" : "auto",
+    "projectileCount" : 1,
+
+    "projectileType" : "rocketshell",
+    "projectileParameters" : {
+      "knockback" : 40
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+
+  "upgradeParameters" : {
+    "rarity" : "Legendary",
+    "inventoryIcon" : "wristgun10up.png",
+    "animationParts" : {
+      "middle" : "wristgun10up.png"
+    },
+    "primaryAbility" : {
+      "fireTime" : 0.9,
+      "energyUsage" : 40
+    },
+    "shortdescription" : "^#fc3b00;Wrist^reset; Homing Blaster ^yellow;^reset;"
+  }
+}

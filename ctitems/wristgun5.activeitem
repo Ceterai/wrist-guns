@@ -1,0 +1,97 @@
+﻿{
+  "itemName" : "wristhowitzer",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "Fires a shrapnel spread that's lethal at close range.",
+  "shortdescription" : "^#fc3b00;Wrist^reset; Howitzer",
+  "tooltipKind" : "gun",
+  "category" : "shotgun",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","shotgun","upgradeableWeapon"],
+  "level" : 4,
+
+  "inventoryIcon" : "wristgun5.png",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "wristgun5.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/shotgun2.ogg"]
+    }
+  },
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [0.8, 0.0],
+
+  "scripts" : ["wristgun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "shrapnelbomb",
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.0,
+    "baseDps" : 15,
+    "energyUsage" : 27,
+    "projectileCount" : 6,
+    "fireType" : "auto",
+    "inaccuracy" : 0.13,
+
+    "projectileType" : "standardbullet",
+    "projectileParameters" : {
+      "damageKind" : "shotgunbullet",
+      "knockbackRange" : 15
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+
+  "upgradeParameters" : {
+    "rarity" : "Legendary",
+    "inventoryIcon" : "wristgun5up.png",
+    "animationParts" : {
+      "middle" : "wristgun5up.png"
+    },
+    "primaryAbility" : {
+      "fireTime" : 0.9,
+      "projectileCount" : 7,
+      "energyUsage" : 30
+    },
+    "shortdescription" : "^#fc3b00;Wrist^reset; Howitzer ^yellow;^reset;"
+  }
+}

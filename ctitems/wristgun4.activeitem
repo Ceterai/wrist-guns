@@ -1,0 +1,97 @@
+﻿{
+  "itemName" : "wristrifle",
+  "price" : 1000,
+  "level" : 4,
+  "rarity" : "Rare",
+  "description" : "Wristfully strong to cover long distances.",
+  "shortdescription" : "^#fc3b00;Wrist^reset; Rifle",
+  "tooltipKind" : "gun",
+  "category" : "sniperRifle",
+  "twoHanded" : false,
+  "maxStack" : 1,
+  "itemTags" : ["weapon","ranged","sniperrifle","upgradeableWeapon"],
+
+  "inventoryIcon" : "wristgun4.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "wristgun4.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/sniper3.ogg"]
+    }
+  },
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [0.8, 0.0],
+
+  "scripts" : ["wristgun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "piercingshot",
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 2.0,
+    "baseDps" : 20.0,
+    "energyUsage" : 38,
+    "inaccuracy" : 0.008,
+    "fireType" : "auto",
+
+    "projectileType" : "standardbullet",
+    "projectileParameters" : {
+      "knockback" : 40,
+      "speed" : 200
+    },
+    "projectileCount" : 1,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+
+  "upgradeParameters" : {
+    "rarity" : "Legendary",
+    "inventoryIcon" : "wristgun4up.png",
+    "animationParts" : {
+      "middle" : "wristgun4up.png"
+    },
+    "primaryAbility" : {
+      "fireTime" : 1.5,
+      "energyUsage" : 44
+    },
+    "shortdescription" : "^#fc3b00;Wrist^reset; Rifle ^yellow;^reset;"
+  }
+}

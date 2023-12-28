@@ -1,0 +1,10 @@
+{
+  "author" : "Ceterai",
+  "description" : "Ever wanted to wear guns on your wrists? I've got you.\n\nThis mod contains 12 upgradeable one-hand guns, that you wear on your wrist.\nFeatures:\n- 1 pistol, 3 smgs, 2 shotguns, 2 grenade launchers, 2 rocket launchers, 1 sniper rifle & 1 flamethrower;\n- Tabula Rasa support;\n- upgrading at Weapon Upgrade Anvil will not only increase base weapon stats, but also might increase speed, projectile count, etc.\n\nEnjoy!\n",
+  "friendlyName" : "Wrist Guns",
+  "link" : "steam://url/CommunityFilePage/2014363721",
+  "name" : "ctwristguns",
+  "steamContentId" : "2014363721",
+  "tags" : "Weapons",
+  "version" : "1.0"
+}

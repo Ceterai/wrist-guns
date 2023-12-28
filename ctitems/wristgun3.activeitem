@@ -1,0 +1,82 @@
+﻿{
+  "itemName" : "wristflamethrower",
+  "price" : 1000,
+  "level" : 4,
+  "rarity" : "Rare",
+  "description" : "Don't burn your wrists!",
+  "shortdescription" : "^#fc3b00;Wrist^reset; Flamethrower",
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : false,
+  "maxStack" : 1,
+  "itemTags" : ["weapon","ranged","upgradeableWeapon"],
+
+  "inventoryIcon" : "wristgun3.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "wristgun3.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fireStart" : [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop" : [ "/sfx/gun/flamethrower_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/flamethrower_stop.ogg" ]
+    }
+  },
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [0.7, 0.0],
+
+  "scripts" : ["wristgun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "flamethrower",
+  "primaryAbility" : {
+    "baseDps" : 15,
+    "energyUsage" : 30,
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbilityType" : "fuelairtrail",
+  "altAbility" : {},
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+
+  "upgradeParameters" : {
+    "rarity" : "Legendary",
+    "inventoryIcon" : "wristgun3up.png",
+    "animationParts" : {
+      "middle" : "wristgun3up.png"
+    },
+    "shortdescription" : "^#fc3b00;Wrist^reset; Flamethrower ^yellow;^reset;"
+  }
+}

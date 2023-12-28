@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 20 },
+    { "item" : "moonstone", "count" : 50 },
+    { "item" : "battery", "count" : 1 }
+  ],
+  "output" : { "item" : "wristhomingblaster", "count" : 1 },
+  "groups" : [ "craftingaccelerator", "weapons", "all", "mod" ]
+}

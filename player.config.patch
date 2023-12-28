@@ -1,0 +1,14 @@
+[
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristlightgun" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristplasmastorm" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristflamethrower" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristrifle" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristhowitzer" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristpoisontouch" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristmortar" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristgrenadier" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristburster" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristhomingblaster" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristgristlegun" } },
+  { "op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "wristwatchgun" } }
+]

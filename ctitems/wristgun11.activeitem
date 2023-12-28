@@ -1,0 +1,110 @@
+﻿{
+  "itemName" : "wristgristlegun",
+  "level" : 4,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "This wrist gun generates its own natural ammo. Ew.",
+  "shortdescription" : "^#fc3b00;Wrist^reset; Gristle Gun",
+  "tooltipKind" : "gun",
+  "category" : "pistol",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","pistol","upgradeableWeapon"],
+
+  "inventoryIcon" : "wristgun11.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "wristgun11.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/gristlegun3.ogg" ]
+    }
+  },
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [0.8, 0.0],
+
+  "scripts" : ["wristgun.lua"],
+
+  "elementalType" : "poison",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.5,
+    "baseDps" : 6.25,
+    "energyUsage" : 18.75,
+    "inaccuracy" : 0.02,
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "bonethorn",
+    "projectileParameters" : {
+      "knockback" : 8,
+      "statusEffects" : [ "weakpoison" ],
+      "bounces" : 1,
+      "damageKind" : "poisonbullet"
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+
+  "upgradeParameters" : {
+    "rarity" : "Legendary",
+    "inventoryIcon" : "wristgun11up.png",
+    "animationParts" : {
+      "middle" : "wristgun11up.png"
+    },
+    "primaryAbility" : {
+      "baseDps" : 8.0,
+      "energyUsage" : 20,
+      "projectileParameters" : {
+        "bounces" : 2
+      }
+    },
+    "shortdescription" : "^#fc3b00;Wrist^reset; Gristle Gun ^yellow;^reset;"
+  }
+}
